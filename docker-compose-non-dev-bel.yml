@@ -93,7 +93,8 @@ services:
     ports:
       - 3307:3306
     environment:
-      MYSQL_ROOT_PASSWORD: bel_teste_1..!_
+      MYSQL_ROOT_PASSWORD: bel_teste_1..!_.
+      MYSQL_DATABASE: superset
     volumes:
       - mysql_db:/var/lib/mysql
 
