@@ -4,8 +4,8 @@ After=syslog.target
 
 [Service]
 User=root
-ExecStart=docker-compose -f docker-compose-non-dev-bel.yml up --build
-ExecStop=docker-compose -f docker-compose-non-dev-bel.yml down
+ExecStart=docker-compose -f /opt/superset_docker/docker-compose-non-dev-bel.yml up --build
+ExecStop=docker-compose -f /opt/superset_docker/docker-compose-non-dev-bel.yml down
 
 [Install]
 WantedBy=multi-user.target
